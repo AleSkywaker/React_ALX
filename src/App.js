@@ -5,6 +5,10 @@ import './App.css';
 function App() {
   let name = 'Alex';
   let presentacion = <span> ¿Que tal?</span>;
+
+  function holaMundo(nombre) {
+    return <span>......man ==>{nombre}</span>;
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -13,7 +17,7 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <h6>
-          Esto es una prueba {name} {presentacion}
+          Esto es una prueba {name} {presentacion} {holaMundo(name)}
         </h6>
         <a
           className="App-link"

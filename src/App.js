@@ -9,7 +9,7 @@ function App() {
     let presentacion = (
       <div>
         <h2>Esto es una prueba</h2>
-        <span> Hola {nombre} ¿Que tal?</span>
+        <h3> Hola {nombre} ¿Que tal?</h3>
       </div>
     );
 

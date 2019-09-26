@@ -8,6 +8,7 @@ function App() {
   function holaMundo(nombre) {
     let presentacion = (
       <div>
+        <p>Esto es una prueba</p>
         <span> Hola {nombre} ¿Que tal?</span>;
       </div>
     );

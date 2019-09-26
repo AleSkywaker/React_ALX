@@ -4,10 +4,11 @@ import './App.css';
 
 function App() {
   let name = 'Alex';
-  let presentacion = <span> ¿Que tal?</span>;
 
   function holaMundo(nombre) {
-    return <span>......man ==>{nombre}</span>;
+    let presentacion = <span> Hola {nombre} ¿Que tal?</span>;
+
+    return presentacion;
   }
   return (
     <div className="App">
@@ -16,9 +17,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <h6>
-          Esto es una prueba {name} {presentacion} {holaMundo(name)}
-        </h6>
+        <h6>{holaMundo(name)}</h6>
         <a
           className="App-link"
           href="https://reactjs.org"

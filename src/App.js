@@ -6,7 +6,11 @@ function App() {
   let name = 'Alex';
 
   function holaMundo(nombre) {
-    let presentacion = <span> Hola {nombre} ¿Que tal?</span>;
+    let presentacion = (
+      <div>
+        <span> Hola {nombre} ¿Que tal?</span>;
+      </div>
+    );
 
     return presentacion;
   }

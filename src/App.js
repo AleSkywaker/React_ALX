@@ -33,7 +33,7 @@ function App() {
         >
           Aprender React
         </a> */}
-        <micomponente>
+        <micomponente />
       </header>
     </div>
   );

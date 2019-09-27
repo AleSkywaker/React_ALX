@@ -25,14 +25,15 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         {holaMundo(name)}
-        <a
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
           Aprender React
-        </a>
+        </a> */}
+        <micomponente>
       </header>
     </div>
   );

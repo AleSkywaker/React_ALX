@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import micomponente from './components/micomponente';
+
 function App() {
   let name = 'Alex';
 

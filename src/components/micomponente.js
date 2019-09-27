@@ -5,3 +5,5 @@ class micomponente extends React.Component {
     return <h1>Hola Alex desde new component</h1>;
   }
 }
+
+export default micomponente;

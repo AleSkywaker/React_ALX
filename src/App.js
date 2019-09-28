@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import micomponente from './components/micomponente';
+import Kaka from './components/MiComponente';
 
 function App() {
   let name = 'Alex';
@@ -24,6 +24,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        {console.log('hola')}
         {holaMundo(name)}
         {/* <a
           className="App-link"
@@ -33,7 +34,7 @@ function App() {
         >
           Aprender React
         </a> */}
-        <micomponente />
+        <Kaka />
       </header>
     </div>
   );

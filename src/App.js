@@ -34,10 +34,10 @@ function App() {
         >
           Aprender React
         </a> */}
-        <Kaka />
+        <MiComponente />
       </header>
     </div>
   );
 }
 
-export default MiComponente;
+export default App;

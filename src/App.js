@@ -35,8 +35,6 @@ function App() {
           Aprender React
         </a> */}
         <MiComponente />
-        <MiComponente />
-        <MiComponente />
       </header>
     </div>
   );

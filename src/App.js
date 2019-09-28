@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Kaka from './components/MiComponente';
+import MiComponente from './components/MiComponente';
 
 function App() {
   let name = 'Alex';
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default MiComponente;

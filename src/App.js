@@ -2,7 +2,7 @@ import React from 'react';
 import './assets/css/App.css';
 
 import Header from './components/Header';
-import Slider from './components/slider';
+import Slider from './components/Slider';
 
 function App() {
   return (

@@ -12,7 +12,7 @@ function App() {
       <Slider />
       <div className="center">
         <section className="componentes">
-          <section id="content"></section>
+          <section id="content">Contenido principal</section>
         </section>
         <Sidebar />
       </div>

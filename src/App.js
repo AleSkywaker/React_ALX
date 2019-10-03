@@ -10,7 +10,12 @@ function App() {
     <div className="App">
       <Header />
       <Slider />
-      <Sidebar />
+      <div className="center">
+        <section className="componentes">
+          <section id="content"></section>
+        </section>
+        <Sidebar />
+      </div>
     </div>
   );
 }

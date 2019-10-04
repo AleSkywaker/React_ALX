@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
+import Seccion from './components/Mainseccion';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <Slider />
       <div className="center">
         <section className="componentes">
-          <section id="content">Contenido principal</section>
+          <section id="content">
+            <Seccion />
+          </section>
         </section>
         <Sidebar />
       </div>

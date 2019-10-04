@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <footer id="footer">
         <div className="center">
-          <p>&copy; Máster en frameworks para JavaScript de victorroblesweb.es</p>
+          <p>&copy; Máster en frameworks para JavaScript de Alex Colombo</p>
         </div>
       </footer>
     );

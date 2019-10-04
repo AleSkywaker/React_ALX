@@ -4,6 +4,7 @@ import './assets/css/App.css';
 import Header from './components/Header';
 import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         </section>
         <Sidebar />
       </div>
+      <div className="clearfix"></div>
+      <Footer />
     </div>
   );
 }

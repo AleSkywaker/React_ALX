@@ -13,11 +13,7 @@ function App() {
       <Header />
       <Slider />
       <div className="center">
-        <section className="componentes">
-          <section id="content">
-            <Seccion />
-          </section>
-        </section>
+        <Seccion />
         <Sidebar />
       </div>
       <div className="clearfix"></div>
@@ -27,3 +23,4 @@ function App() {
 }
 
 export default App;
+

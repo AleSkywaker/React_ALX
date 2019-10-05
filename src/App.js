@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Slider />
+      <Slider titulo="Bienvenidos al Blog de Alex" />
       <div className="center">
         <Seccion />
         <Sidebar />
@@ -23,4 +23,3 @@ function App() {
 }
 
 export default App;
-

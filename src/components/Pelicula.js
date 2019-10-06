@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class Pelicula extends Component {
   render() {
     console.log(this.props.pelicula);
+    const peli = this.props.pelicula;
     const { titulo, imagen } = this.props.pelicula;
     return (
       <article className="article-item" id="article-template">
@@ -13,7 +14,8 @@ class Pelicula extends Component {
         <h2>{titulo}</h2>
         <span className="date">Hace 5 minutos</span>
         <a href="#">Leer más</a>
-        <button>Marcar como favorita</button>
+        {/*** Pasar datos del hijo al padre */}
+        <button onClick={this.props.marcarFavorita(peli)}>Marcar como favorita</button>
         <div className="clearfix"></div>
       </article>
     );

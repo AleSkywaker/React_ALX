@@ -28,6 +28,11 @@ class Peliculas extends Component {
       peliculas
     });
   };
+
+  favorita = () => {
+    console.log('favorita marcada');
+  };
+
   render() {
     return (
       <div id="content" className="peliculas">
@@ -35,12 +40,14 @@ class Peliculas extends Component {
         <p>Peliculas favoritas de {this.state.nombre}</p>
 
         <button onClick={this.cambiarTitulo}>Cambiar nombre</button>
-        <p><strong>La pelicula favotira es : </strong> <span>X</span></p>
+        <p>
+          <strong>La pelicula favotira es : </strong> <span>X</span>
+        </p>
 
         {/**Crear componentes peliculas */}
         <div id="articles" className="peliculas">
           {this.state.peliculas.map((peli, i) => {
-            return <Pelicula key={i} pelicula={peli} />;
+            return <Pelicula key={i} pelicula={peli} marcarFavorita={this.favorita} />;
           })}
         </div>
       </div>

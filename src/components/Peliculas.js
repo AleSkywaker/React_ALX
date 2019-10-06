@@ -22,7 +22,7 @@ class Peliculas extends Component {
   };
 
   cambiarTitulo = () => {
-    let peliculas = this.state.peliculas;
+    let { peliculas } = this.state;
     peliculas[2].titulo = 'Viaje a Marte';
     this.setState({
       peliculas

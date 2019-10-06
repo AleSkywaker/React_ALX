@@ -20,11 +20,22 @@ class Peliculas extends Component {
     ],
     nombre: 'Alex Colombo'
   };
+
+  cambiarTitulo = () => {
+    let peliculas = this.state.peliculas;
+    peliculas[2].titulo = 'Viaje a Marte';
+    this.setState({
+      peliculas
+    });
+  };
+
   render() {
     return (
       <div id="content" className="peliculas">
         <h2 className="subheader">Peliculas</h2>
         <p>Peliculas favoritas de {this.state.nombre}</p>
+
+        <button onClick={this.cambiarTitulo}>Cambiar nombre</button>
 
         {/**Crear componentes peliculas */}
         <div id="articles" className="peliculas">

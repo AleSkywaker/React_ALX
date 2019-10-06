@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class Pelicula extends Component {
   render() {
+    console.log(this.props.pelicula);
     const { titulo, imagen } = this.props.pelicula;
     return (
       <article className="article-item" id="article-template">

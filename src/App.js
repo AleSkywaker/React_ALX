@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
-import Seccion from './components/Mainseccion';
+import Peliculas from './components/Peliculas';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Header />
       <Slider titulo="Bienvenidos al Blog de Alex" />
       <div className="center">
-        <Seccion />
+        <Peliculas />
         <Sidebar />
       </div>
       <div className="clearfix"></div>

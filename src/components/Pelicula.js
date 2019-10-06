@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 class Pelicula extends Component {
+  marcar = () => {
+    this.props.marcarFavorita(this.props.pelicula);
+  };
   render() {
-    console.log(this.props.pelicula);
-    const peli = this.props.pelicula;
     const { titulo, imagen } = this.props.pelicula;
     return (
       <article className="article-item" id="article-template">
@@ -15,7 +16,7 @@ class Pelicula extends Component {
         <span className="date">Hace 5 minutos</span>
         <a href="#">Leer más</a>
         {/*** Pasar datos del hijo al padre */}
-        <button onClick={this.props.marcarFavorita(peli)}>Marcar como favorita</button>
+        <button onClick={this.marcar}>Marcar como favorita</button>
         <div className="clearfix"></div>
       </article>
     );

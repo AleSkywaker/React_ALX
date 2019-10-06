@@ -29,8 +29,9 @@ class Peliculas extends Component {
     });
   };
 
-  favorita = () => {
+  favorita = e => {
     console.log('favorita marcada');
+    console.log(e);
   };
 
   render() {

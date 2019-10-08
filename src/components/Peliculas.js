@@ -62,10 +62,12 @@ class Peliculas extends Component {
         <p>Peliculas favoritas de {this.state.nombre}</p>
 
         <button onClick={this.cambiarTitulo}>Cambiar nombre</button>
-        {this.state.favorita.titulo && (
+        {this.state.favorita.titulo ? (
           <p className="favorita" style={pStyle}>
             <strong>La pelicula favotira es : </strong> <span>{this.state.favorita.titulo}</span>
           </p>
+        ) : (
+          <p>Ho hay Pelicula favorita</p>
         )}
 
         {/**Crear componentes peliculas */}

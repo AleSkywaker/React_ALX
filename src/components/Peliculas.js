@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Pelicula from './Pelicula';
 
-
 class Peliculas extends Component {
   state = {
     peliculas: [
@@ -16,7 +15,8 @@ class Peliculas extends Component {
       },
       {
         titulo: 'Pulp Fiction',
-        imagen: 'https://pics.filmaffinity.com/Pulp_Fiction-210382116-large.jpg'
+        imagen:
+          'https://pics.filmaffinity.com/Pulp_Fiction-210382116-large.jpghttps://d3cra5ec8gdi8w.cloudfront.net/uploads/imagenes/bajacalidad/2015/06/22/_cartel_87651de4.jpg?ffee570729db62f82dd1ae3aaac60a54'
       }
     ],
     nombre: 'Alex Colombo',

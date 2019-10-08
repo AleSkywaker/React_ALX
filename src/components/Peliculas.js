@@ -38,6 +38,11 @@ class Peliculas extends Component {
   };
 
   render() {
+    let pStyle = {
+      background: 'green',
+      color: 'white',
+      padding: '10px'
+    };
     let favorita;
     if (this.state.favorita.titulo) {
       favorita = (
@@ -52,11 +57,7 @@ class Peliculas extends Component {
         </p>
       );
     }
-    let pStyle = {
-      background: 'green',
-      color: 'white',
-      padding: '10px'
-    };
+
     return (
       <div id="content" className="peliculas">
         <h2 className="subheader">Peliculas</h2>
@@ -71,6 +72,7 @@ class Peliculas extends Component {
           <p>Ho hay Pelicula favorita</p>
         )}
 
+        {favorita}
         {/**Crear componentes peliculas */}
         <div id="articles" className="peliculas">
           {this.state.peliculas.map((peli, i) => {

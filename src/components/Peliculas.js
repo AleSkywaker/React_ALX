@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Pelicula from './Pelicula';
 
+
 class Peliculas extends Component {
   state = {
     peliculas: [
@@ -18,7 +19,8 @@ class Peliculas extends Component {
         imagen: 'https://pics.filmaffinity.com/Pulp_Fiction-210382116-large.jpg'
       }
     ],
-    nombre: 'Alex Colombo'
+    nombre: 'Alex Colombo',
+    favorita: {}
   };
 
   cambiarTitulo = () => {
@@ -29,21 +31,29 @@ class Peliculas extends Component {
     });
   };
 
-  favorita = e => {
-    console.log('favorita marcada');
-    console.log(e);
+  favorita = peli => {
+    this.setState({
+      favorita: peli
+    });
   };
 
   render() {
+    let pStyle = {
+      background: 'green',
+      color: 'white',
+      padding: '10px'
+    };
     return (
       <div id="content" className="peliculas">
         <h2 className="subheader">Peliculas</h2>
         <p>Peliculas favoritas de {this.state.nombre}</p>
 
         <button onClick={this.cambiarTitulo}>Cambiar nombre</button>
-        <p>
-          <strong>La pelicula favotira es : </strong> <span>X</span>
-        </p>
+        {this.state.favorita.titulo && (
+          <p className="favorita" style={pStyle}>
+            <strong>La pelicula favotira es : </strong> <span>{this.state.favorita.titulo}</span>
+          </p>
+        )}
 
         {/**Crear componentes peliculas */}
         <div id="articles" className="peliculas">

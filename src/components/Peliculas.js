@@ -38,6 +38,19 @@ class Peliculas extends Component {
   };
 
   render() {
+    if (this.state.favorita.titulo) {
+      return (
+        <p className="favorita" style={pStyle}>
+          <strong>La pelicula favotira es : </strong> <span>{this.state.favorita.titulo}</span>
+        </p>
+      );
+    } else {
+      return (
+        <p className="favorita">
+          <strong>Todavia no ha elegido peli favorita</strong>
+        </p>
+      );
+    }
     let pStyle = {
       background: 'green',
       color: 'white',

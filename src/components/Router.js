@@ -3,10 +3,12 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 class Router extends React.Component {
   render() {
-    {
-      /*Configurar rutas y páginas*/
-    }
-    return <h1>Router</h1>;
+    return (
+      <BrowserRouter>
+        {/*Configurar rutas y páginas*/}
+        <Switch></Switch>
+      </BrowserRouter>
+    );
   }
 }
 

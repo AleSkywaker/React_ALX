@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 class Router extends React.Component {
   render() {
-    return;
+    return <h1>Router</h1>;
   }
 }
+
+export default Router;

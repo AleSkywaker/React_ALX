@@ -12,6 +12,8 @@ class Router extends React.Component {
         <Switch>
           <Route exact path="/" component={Peliculas} />
           <Route exact path="/prueba" component={Seccion} />
+          <Route exact path="/pagina1" render={() => <h1>Hola Alex</h1>} />
+
           <Route component={Error} />
         </Switch>
       </BrowserRouter>

@@ -6,14 +6,15 @@ import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import Peliculas from './components/Peliculas';
-
+import Router from './components/Router';
 function App() {
   return (
     <div className="App">
       <Header />
       <Slider titulo="Bienvenidos al Blog de Alex" />
       <div className="center">
-        <Peliculas />
+        {/* <Peliculas /> */}
+        <Router />
         <Sidebar />
       </div>
       <div className="clearfix"></div>

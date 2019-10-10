@@ -72,6 +72,8 @@ class Peliculas extends Component {
           <p>Ho hay Pelicula favorita</p>
         )}
 
+        {<h4>{this.props.saludo}</h4>}
+
         {favorita}
         {/**Crear componentes peliculas */}
         <div id="articles" className="peliculas">

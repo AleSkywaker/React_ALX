@@ -27,11 +27,14 @@ class Router extends React.Component {
             exact
             path="/parametros/:id?"
             render={props => {
-              let id = props.match.params.id;
-              console.log(id);
+              let nombre = props.match.params.id;
+              let otro = 'unknow';
+              console.log(nombre);
               return (
                 <div id="content">
-                  <h1 className="subheader">Hola {id} 🔥</h1>
+                  <h1 className="subheader">
+                    Hola {nombre && nombre} {!nombre && otro}!! 🔥
+                  </h1>
                 </div>
               );
             }}

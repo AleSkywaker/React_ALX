@@ -22,6 +22,7 @@ class Router extends React.Component {
               </React.Fragment>
             )}
           />
+          <Route exact path="/parametros/:id" render={() => <h1>Hola paremetros</h1>} />
 
           <Route component={Error} />
         </Switch>

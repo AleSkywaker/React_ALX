@@ -31,7 +31,7 @@ class Router extends React.Component {
               console.log(id);
               return (
                 <div id="content">
-                  <h1 className="subheader">Hola {id} !! :)</h1>
+                  <h1 className="subheader">Hola {id} 🔥</h1>
                 </div>
               );
             }}

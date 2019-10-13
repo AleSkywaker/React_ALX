@@ -27,7 +27,7 @@ class Router extends React.Component {
             path="/parametros/:id"
             render={() => (
               <div id="content">
-                <h1>Hola paremetros</h1>
+                <h1 class="subheader">Hola paremetros</h1>
               </div>
             )}
           />

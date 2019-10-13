@@ -24,12 +24,14 @@ class Router extends React.Component {
           />
           <Route
             exact
-            path="/parametros/:id"
-            render={() => (
-              <div id="content">
-                <h1 class="subheader">Hola paremetros</h1>
-              </div>
-            )}
+            path="/parametros/:id?"
+            render={props => {
+              return (
+                <div id="content">
+                  <h1 class="subheader">Hola paremetros</h1>
+                </div>
+              );
+            }}
           />
 
           <Route component={Error} />

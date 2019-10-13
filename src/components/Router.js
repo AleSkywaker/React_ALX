@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Seccion from './Mainseccion';
 import Peliculas from './Peliculas';
 import Error from './Error';
+import { CLIENT_RENEG_LIMIT } from 'tls';
 
 class Router extends React.Component {
   render() {
@@ -26,9 +27,11 @@ class Router extends React.Component {
             exact
             path="/parametros/:id?"
             render={props => {
+              let id = props.match.params.id;
+              console.log(id);
               return (
                 <div id="content">
-                  <h1 class="subheader">Hola paremetros</h1>
+                  <h1 className="subheader">Hola paremetros</h1>
                 </div>
               );
             }}

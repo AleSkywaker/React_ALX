@@ -22,16 +22,16 @@ class Header extends Component {
                 <NavLink to="/">Inicio</NavLink>
               </li>
               <li>
-                <NavLink to="/">Inicio</NavLink>
+                <NavLink to="/prueba">prueba</NavLink>
               </li>
               <li>
-                <NavLink to="/">Inicio</NavLink>
+                <NavLink to="/pagina1">pagina1</NavLink>
               </li>
               <li>
-                <NavLink to="/">Inicio</NavLink>
+                <NavLink to="/parametros">parametros</NavLink>
               </li>
               <li>
-                <NavLink to="/">Inicio</NavLink>
+                <NavLink to="/">otros</NavLink>
               </li>
             </ul>
           </nav>

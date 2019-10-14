@@ -3,12 +3,17 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Seccion from './Mainseccion';
 import Peliculas from './Peliculas';
 import Error from './Error';
-import { CLIENT_RENEG_LIMIT } from 'tls';
+
+import Header from './Header';
+import Slider from './Slider';
 
 class Router extends React.Component {
   render() {
     return (
       <BrowserRouter>
+        <Header />
+        <Slider titulo="Bienvenidos al Blog de Alex" />
+        <div className="center"></div>
         {/*Configurar rutas y páginas*/}
         <Switch>
           <Route exact path="/" component={Peliculas} />

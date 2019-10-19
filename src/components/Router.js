@@ -16,6 +16,7 @@ class Router extends React.Component {
         <div className="center"></div>
         {/*Configurar rutas y páginas*/}
         <Switch>
+          <Route exact path="/" component={Peliculas} />
           <Route exact path="/home" component={Peliculas} />
           <Route exact path="/prueba" component={Seccion} />
           <Route

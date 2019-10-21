@@ -4,7 +4,7 @@ class Home extends Component {
   render() {
     return (
       <div id="content">
-        <h1>últimos Articulos</h1>
+        <h1 className="subheader">últimos Articulos</h1>
       </div>
     );
   }

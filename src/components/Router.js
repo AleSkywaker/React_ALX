@@ -5,14 +5,13 @@ import Peliculas from './Peliculas';
 import Error from './Error';
 
 import Header from './Header';
-import Slider from './Slider';
 
 class Router extends React.Component {
   render() {
     return (
       <BrowserRouter>
         <Header />
-        <Slider titulo="Bienvenidos al Blog de Alex" />
+        {/* <Slider titulo="Bienvenidos al Blog de Alex" /> */}
         <div className="center"></div>
         {/*Configurar rutas y páginas*/}
         <Switch>

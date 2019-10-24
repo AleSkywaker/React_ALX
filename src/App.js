@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       {/* <Peliculas /> */}
       <Router />
-      <Sidebar />
 
       <div className="clearfix"></div>
       <Footer />

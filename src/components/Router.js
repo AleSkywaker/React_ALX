@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Seccion from './Mainseccion';
 import Peliculas from './Peliculas';
+import Home from './Home';
 import Error from './Error';
 
 import Header from './Header';
@@ -16,7 +17,7 @@ class Router extends React.Component {
         {/*Configurar rutas y páginas*/}
         <Switch>
           <Route exact path="/" component={Peliculas} />
-          <Route exact path="/home" component={Peliculas} />
+          <Route exact path="/home" component={Home} />
           <Route exact path="/prueba" component={Seccion} />
           <Route
             exact
@@ -44,7 +45,6 @@ class Router extends React.Component {
               );
             }}
           />
-
           <Route component={Error} />
         </Switch>
       </BrowserRouter>

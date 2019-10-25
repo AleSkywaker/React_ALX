@@ -8,7 +8,7 @@ class Slider extends Component {
       <div id="slider" className="slider-big">
         <h1>{this.props.titulo}</h1>
         <a href="#" className="btn-white">
-          Ir al blog
+          {this.props.btn}
         </a>
       </div>
     );

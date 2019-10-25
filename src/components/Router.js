@@ -12,7 +12,6 @@ class Router extends React.Component {
     return (
       <BrowserRouter>
         <Header />
-        {/* <Slider titulo="Bienvenidos al Blog de Alex" /> */}
         {/*Configurar rutas y páginas*/}
         <Switch>
           <Route exact path="/" component={Peliculas} />

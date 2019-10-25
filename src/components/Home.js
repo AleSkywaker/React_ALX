@@ -5,14 +5,14 @@ import Sidebar from './Sidebar';
 class Home extends Component {
   render() {
     return (
-      <div id="content">
+      <div className="home">
         <Slider titulo="Bienvenidos al Blog de Alex" btn="Ir al blog" />
         <div className="center">
-          <div className="content">
+          <div id="content">
             <h1 className="subheader">últimos Articulos</h1>
           </div>
+          <Sidebar />
         </div>
-        <Sidebar />
       </div>
     );
   }

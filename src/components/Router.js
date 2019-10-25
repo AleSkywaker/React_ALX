@@ -14,7 +14,7 @@ class Router extends React.Component {
         <Header />
         {/*Configurar rutas y páginas*/}
         <Switch>
-          <Route exact path="/" component={Peliculas} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/home" component={Home} />
           <Route exact path="/prueba" component={Seccion} />
           <Route

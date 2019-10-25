@@ -8,7 +8,9 @@ class Home extends Component {
       <div id="content">
         <Slider titulo="Bienvenidos al Blog de Alex" btn="Ir al blog" />
         <div className="center">
-          <h1 className="subheader">últimos Articulos</h1>
+          <div className="content">
+            <h1 className="subheader">últimos Articulos</h1>
+          </div>
         </div>
         <Sidebar />
       </div>

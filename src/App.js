@@ -10,8 +10,6 @@ function App() {
     <div className="App">
       {/* <Peliculas /> */}
       <Router />
-      <div className="clearfix"></div>
-      <Footer />
     </div>
   );
 }

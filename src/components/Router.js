@@ -4,7 +4,7 @@ import Seccion from './Mainseccion';
 import Peliculas from './Peliculas';
 import Home from './Home';
 import Error from './Error';
-
+import Footer from './Footer';
 import Header from './Header';
 
 class Router extends React.Component {
@@ -45,6 +45,8 @@ class Router extends React.Component {
           />
           <Route component={Error} />
         </Switch>
+        <div className="clearfix"></div>
+        <Footer />
       </BrowserRouter>
     );
   }

@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div id="content">
-        <Slider titulo="Bienvenidos al Blog de Alex" />
+        <Slider titulo="Bienvenidos al Blog de Alex" btn="Ir al blog" />
         <h1 className="subheader">últimos Articulos</h1>
       </div>
     );

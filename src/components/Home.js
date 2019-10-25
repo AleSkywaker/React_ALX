@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Slider from './Slider';
 
 class Home extends Component {
-  render() {
+  render() {pp
     return (
       <div id="content">
         <Slider titulo="Bienvenidos al Blog de Alex" btn="Ir al blog" />

@@ -13,7 +13,6 @@ class Router extends React.Component {
       <BrowserRouter>
         <Header />
         {/* <Slider titulo="Bienvenidos al Blog de Alex" /> */}
-        <div className="center"></div>
         {/*Configurar rutas y páginas*/}
         <Switch>
           <Route exact path="/" component={Peliculas} />
